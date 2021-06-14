@@ -5,9 +5,33 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Mahasiswa {
-    String npm;
-    String nama;
-    Date tanggalLahir;
+    private String npm;
+    private String nama;
+    private Date tanggalLahir;
+
+    public String getNpm() {
+        return npm;
+    }
+
+    public void setNpm(String npm) {
+        this.npm = npm;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public Date getTanggalLahir() {
+        return tanggalLahir;
+    }
+
+    public void setTanggalLahir(Date tanggalLahir) {
+        this.tanggalLahir = tanggalLahir;
+    }
 
     void tampilkanAtribut(){
         String polaTanggal = "dd-MM-yyyy";
@@ -36,5 +60,9 @@ public class Mahasiswa {
             }
         }
         return selisihTahun;
+    }
+
+    public Mahasiswa() {
+        System.out.println("Ini adalah constructor");
     }
 }
